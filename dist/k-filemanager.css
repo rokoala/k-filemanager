@@ -1,0 +1,112 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(fonts/josefin1.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(fonts/josefin2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+li, ul {
+  list-style: none
+}
+i {
+  cursor: default;
+  padding: 5px;
+}
+.k-folder-icon {
+  color: #3DACD0;
+}
+.disable-select {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.full-wh {
+  width: 100%;
+  height: 100%;
+}
+.item-clickable {
+  cursor: pointer;
+}
+.item-toolbar{
+  background-color:white;
+  border: 1px solid transparent;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.item-toolbar:hover{
+  border: 1px solid rgba(0,0,0,0.09);
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px lightgray;
+}
+.clickable:hover {
+  opacity: 0.5;
+}
+.highlight:hover {
+  opacity: 0.5;
+}
+.inputSearchBar {
+  width: 900px;
+}
+.listSearchBar {
+  width: 916px;
+}
+.main-logo {
+  font-family: 'Josefin Sans';
+  position: absolute;
+  top: 28vh;
+  left: 55%;
+  font-size: 45px;
+}
+@media screen and (max-width: 1500px) {
+  .inputSearchBar {
+    width: 650px;
+  }
+  .listSearchBar {
+    width: 666px;
+  }
+  .main-logo {
+    left: 52%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .inputSearchBar {
+    width: 450px;
+  }
+  .listSearchBar {
+    width: 466px;
+  }
+  .main-logo {
+    left: 45%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .inputSearchBar {
+    width: 320px;
+  }
+  .listSearchBar{
+    width: 336px;
+  }
+  .main-logo {
+    left: 40%;
+  }
+}
